@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahmin Oyunu</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="game-container">
+        <h1>Tahmin Oyunu</h1>
+        <p>Sayının hangi sayıya kadar oluşturulacağını giriniz: (Maksimum 50)</p>
+        <input type="number" id="aralik-input" min="1" max="50">
+        <button id="basla-btn">Oyuna Başla</button>
+    </div>
+    <div id="tahmin-container" style="display: none;">
+        <p id="hak-text"></p>
+        <p>Tahmininizi Giriniz:</p>
+        <input type="number" id="tahmin-input">
+        <button id="tahmin-btn">Tahmin Et</button>
+    </div>
+    <div id="tebrikler-container" style="display: none;">
+        <p id="tebrikler-text"></p>
+        <p id="puan-text"></p>
+    </div>
+    <div id="tekrar-dene-container" style="display: none;">
+        <p id="tekrar-dene-sayi"></p>
+        <button id="tekrar-dene-btn">Tekrar Dene</button>
+    </div>
+    <div id="error-container" style="display: none;">
+        <h3 id="error-title"></h3>
+        <p id="error-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
